@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background-color: #000;
+  font-family: "Poppins";
+}
+
+#MainGame {
+  color: rgb(206, 236, 255);
+  font-size: 40px;
+  height: 99%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px
+}
+
+.hole {
+  text-decoration: none;
+  outline: none;
+  background-color: #ff4545;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.holeGood {
+  text-decoration: none;
+  outline: none;
+  background-color: #53ff62;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.main-btn {
+  height: 70px;
+  width: 220px;
+  font-size: 85%;
+}
+
+#mainbtnHolder {
+  display: flex;
+  gap: 50px;
+}
+
+#holes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "hole1 hole2 hole3"
+    "hole4 hole5 hole6"
+    "hole7 hole8 hole9";
+gap: 30px
+}
+
+.hole1 { grid-area: hole1; height: 150px; width: 150px; border-radius: 100%;}
+.hole2 { grid-area: hole2; height: 150px; width: 150px; border-radius: 100%;}
+.hole3 { grid-area: hole3; height: 150px; width: 150px; border-radius: 100%;}
+.hole4 { grid-area: hole4; height: 150px; width: 150px; border-radius: 100%;}
+.hole5 { grid-area: hole5; height: 150px; width: 150px; border-radius: 100%;}
+.hole6 { grid-area: hole6; height: 150px; width: 150px; border-radius: 100%;}
+.hole7 { grid-area: hole7; height: 150px; width: 150px; border-radius: 100%;}
+.hole8 { grid-area: hole8; height: 150px; width: 150px; border-radius: 100%;}
+.hole9 { grid-area: hole9; height: 150px; width: 150px; border-radius: 100%;}
+
+#labels {
+    line-height: 10px;
+    text-align: center;
+}
+
+#pts {font-size: 60px}
+
+#timer {
+    font-size: 50px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Catcher</title>
+    <link rel="stylesheet" href="./st.css" />
+  </head>
+  <body>
+    <div id="MainGame">
+      <div id="labels">
+        <p id="pts">{{points}} Points</p>
+        <p id="timer">{{timer}}</p>
+      </div>
+
+      <div id="holes">
+        <button class="hole1 hole" @click="hitBad"></button>
+        <button class="hole2 hole" @click="hitBad"></button>
+        <button class="hole3 hole" @click="hitBad"></button>
+        <button class="hole4 hole" @click="hitBad"></button>
+        <button class="hole5 hole" @click="hitBad"></button>
+        <button class="hole6 hole" @click="hitBad"></button>
+        <button class="hole7 hole" @click="hitBad"></button>
+        <button class="hole8 hole" @click="hitBad"></button>
+        <button class="hole9 hole" @click="hitBad"></button>
+
+        <button class="hole1 holeGood" @click="hit1" v-if="popped1"></button>
+        <button class="hole2 holeGood" @click="hit2" v-if="popped2"></button>
+        <button class="hole3 holeGood" @click="hit3" v-if="popped3"></button>
+        <button class="hole4 holeGood" @click="hit4" v-if="popped4"></button>
+        <button class="hole5 holeGood" @click="hit5" v-if="popped5"></button>
+        <button class="hole6 holeGood" @click="hit6" v-if="popped6"></button>
+        <button class="hole7 holeGood" @click="hit7" v-if="popped7"></button>
+        <button class="hole8 holeGood" @click="hit8" v-if="popped8"></button>
+        <button class="hole9 holeGood" @click="hit9" v-if="popped9"></button>
+      </div>
+
+      <div id="mainbtnHolder">
+        <button class="main-btn" @click="startGame" :disabled="newGame">New Game</button>
+        <button class="main-btn" @click="guideInvoke">Guide</button>
+      </div>
+    </div>
+
+    <script src="./vue/vue.global.prod.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
